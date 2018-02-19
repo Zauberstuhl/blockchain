@@ -1,9 +1,9 @@
 FROM google/golang
 
 WORKDIR /gopath/src/blockchain
-ADD .  /gopath/src/blockchain
-RUN go get blockchain/cli
+ADD . /gopath/src/blockchain
+RUN go get blockchain
 
 CMD []
 EXPOSE 9119
-ENTRYPOINT cli
+ENTRYPOINT blockchain
